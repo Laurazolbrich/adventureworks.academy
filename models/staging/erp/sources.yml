@@ -2,8 +2,8 @@ version: 2
 
 sources:
   - name: ERP
-    database: FEA24_4 
-    schema: RAW_ADVENTURE_WORKS 
+    database: FEA24_4
+    schema: RAW_ADVENTURE_WORKS
     tables:
       - name: SALESREASON
       - name: SALESORDERHEADERSALESREASON
