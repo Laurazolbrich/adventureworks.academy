@@ -10,3 +10,6 @@ sources:
       - name: CREDITCARD
       - name: PERSONCREDITCARD
       - name: PERSON
+      - name: ADDRESS
+      - name: STATEPROVINCE
+      - name: COUNTRYREGION
