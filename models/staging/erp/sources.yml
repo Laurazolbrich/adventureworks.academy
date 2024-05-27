@@ -13,3 +13,8 @@ sources:
       - name: ADDRESS
       - name: STATEPROVINCE
       - name: COUNTRYREGION
+      - name: SALESORDERHEADER
+      - name: PRODUCT
+
+      
+
