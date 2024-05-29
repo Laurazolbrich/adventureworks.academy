@@ -8,10 +8,11 @@ with
         select *
         from {{ ref('stg_erp__salesorderheadersalesreason')}}
     )
+
     , uniao_tabelas as (
         select 
-           motivo.pk_salesreasonid 
-            , motivo_header.pk_salesorderid
+           motivo.pk_salesreasonid
+            , motivo_header.fk_salesorderid
             , motivo.nm_salesreason
         from motivo
         left join motivo_header on motivo.pk_salesreasonid = motivo_header.fk_salesreasonid
@@ -24,8 +25,8 @@ with
           from uniao_tabelas
     )
      
-    select *
-    from transformacoes
+select *
+from transformacoes
 
 
 

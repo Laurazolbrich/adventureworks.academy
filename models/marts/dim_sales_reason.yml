@@ -15,7 +15,7 @@ models:
         tests:
           - not_null
 
-      - name: PK_SALESORDERID
+      - name: FK_SALESORDERID
         description: Primary key do motivo header.
         
 
