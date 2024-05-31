@@ -23,5 +23,3 @@ models:
         description: nome do motivo da venda.
         tests: 
           - not_null
-              
-

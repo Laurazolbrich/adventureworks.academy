@@ -1,0 +1,42 @@
+version: 2
+
+models:
+  - name: dim_location
+    description: Tabela dimensão da localização.
+    columns:
+      - name: SK_STATEPROVINCE_ID
+        description: Surrogate key for dim_location.
+        tests:
+          - unique
+          - not_null
+
+      - name: pk_address
+        description: Address identifier.
+        tests:
+          - unique
+          - not_null
+
+      - name: addressline
+        description: address description.        
+        
+      - name: city
+        description: city name.
+
+      - name: state
+        description: state code.
+
+      - name: nm_state 
+        description: state name.
+      
+      - name: fk_countryregioncode 
+        description: Identifier that connects the state table with the country table.
+        test: 
+          - not_null
+      
+      - name: nm_country
+        description: country name.
+      
+      - name: fk_stateprovince
+        description: state identifier
+        test: 
+          - not_null
