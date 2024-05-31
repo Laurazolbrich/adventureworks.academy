@@ -2,7 +2,7 @@ with
     fonte_address as (
         select 
             cast(ADDRESSID as int) as pk_address
-            , cast(ADDRESSLINE1 as varchar) as addressline1
+            , cast(ADDRESSLINE1 as varchar) as addressline
             , cast(ADDRESSLINE2 as varchar) as addressline2
             , cast(CITY  as varchar) as city
             , cast(STATEPROVINCEID as int) as fk_stateprovince
