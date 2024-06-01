@@ -1,0 +1,19 @@
+version: 2
+
+models:
+  - name: dim_products
+    description: Products dimension
+    columns:
+      - name: SK_PRODUTO
+        description: Surrogate key for products dimension  
+        tests:
+          - unique
+          - not_null
+
+      - name: PK_PRODUCT
+        description: Product identifier
+        tests:
+          - not_null
+
+      - name: NM_PRODUCT
+        description: Poduct name
