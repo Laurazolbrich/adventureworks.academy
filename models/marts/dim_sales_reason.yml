@@ -1,0 +1,25 @@
+version: 2
+
+models:
+  - name: dim_sales_reason
+    description: Tabela dimensão dos motivos de venda.
+    columns:
+      - name: SK_SALESREASONID
+        description: Surrogate key da dimensão sales reason.
+        tests:
+          - unique
+          - not_null
+
+      - name: PK_SALESREASONID
+        description: Primary key da dim sales reason.
+        tests:
+          - not_null
+
+      - name: FK_SALESORDERID
+        description: Primary key do motivo header.
+        
+
+      - name: NM_SALESREASON
+        description: nome do motivo da venda.
+        tests: 
+          - not_null

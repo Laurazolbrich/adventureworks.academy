@@ -15,6 +15,9 @@ sources:
       - name: COUNTRYREGION
       - name: SALESORDERHEADER
       - name: PRODUCT
+      - name: SPECIALOFFERPRODUCT
+      - name: PRODUCTPRODUCTPHOTO
+      
 
       
 

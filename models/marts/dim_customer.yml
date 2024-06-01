@@ -1,0 +1,33 @@
+version: 2
+
+models:
+  - name: dim_customer
+    description: Customer dimension table.
+    columns:
+      - name: SK_BUSINESSENTITY_ID
+        description: Surrogate key for dim_customer.
+        tests:
+          - unique
+          - not_null
+
+      - name: PK_BUSINESSENTITY
+        description: Customer identifier.
+        tests:
+          - unique
+          - not_null
+
+      - name: firstname
+        description: Customer name.       
+        
+      - name: middlename
+        description: Customer middle name
+
+      - name: lastname
+        description: Customer last name
+      
+      - name: fk_creditcard
+        description: Identifier that connects the table creditcard with the table personcredit card
+
+      - name: cardtype_creditcard
+        description: Customer card type
+      
