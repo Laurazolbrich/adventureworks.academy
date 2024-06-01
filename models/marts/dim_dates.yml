@@ -1,0 +1,32 @@
+version: 2
+
+models:
+  - name: dim_dates
+    description: Dates dimension
+    columns:
+      - name: FULL_DATE
+        description: Full date value.
+        tests:
+          - unique
+          - not_null
+      
+      - name: DAY
+        description: Day of the month.
+      
+      - name: MONTH
+        description: Month of the year.
+      
+      - name: YEAR
+        description: Year.
+      
+      - name: DAY_OF_WEEK_NAME
+        description: Name of the day of the week (e.g., Monday, Tuesday).
+      
+      - name: DAY_OF_WEEK_NUMBER
+        description: Number of the day of the week (e.g., 1 for Sunday, 2 for Monday).
+      
+      - name: WEEK_OF_YEAR
+        description: Week number of the year.
+      
+      - name: QUARTER
+        description: Quarter of the year.
