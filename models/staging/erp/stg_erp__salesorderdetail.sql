@@ -8,7 +8,7 @@ with
         , cast(PRODUCTID as int) as product_id
         , cast(SPECIALOFFERID as int) as specialofferid
         , cast(UNITPRICE as number) as unitprice
-        , cast(UNITPRICEDISCOUNT as number) as unitpricediscount
+        , cast(UNITPRICEDISCOUNT as float) as unitpricediscount
         from {{ source('ERP', 'SALESORDERDETAIL') }}
     )
 

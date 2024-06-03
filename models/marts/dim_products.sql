@@ -25,7 +25,7 @@ with
       
     , transformations as (
           select
-              row_number() over (order by pk_product) as sk_produto
+              row_number() over (order by pk_product) as sk_product
               , *     
           from joined
     )
