@@ -21,7 +21,7 @@ with
             , person.middlename
             , person.lastname
             , person_card.fk_creditcard
-            , credit_card.cardtype_creditcard
+            , credit_card.cardtype
         from person
         left join  person_card on person.pk_businessentity =  person_card.fk_businessentity
         left join  credit_card on person_card.fk_creditcard =  credit_card.pk_creditcard

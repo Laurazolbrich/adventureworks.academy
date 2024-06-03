@@ -21,7 +21,7 @@ with
             , details.product_id
             , orders.totaldue
             , orders.orderdate
-            , orders.status
+            , orders.sale_status
         from orders
         left join details on orders.pk_salesorderid = details.fk_salesorder_id
     )

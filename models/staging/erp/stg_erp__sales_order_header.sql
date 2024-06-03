@@ -5,7 +5,7 @@ with
             , CAST(ORDERDATE AS DATE) AS orderdate
             , CAST(DUEDATE AS DATE) AS duedate
             , CAST(SHIPDATE AS DATE) AS shipdate
-            , CAST(STATUS AS INT) AS status
+            , CAST(STATUS AS INT) AS sale_status
             , CAST(SHIPTOADDRESSID AS INT) AS shiptoaddressid
             , CAST(CREDITCARDID AS INT) AS creditcardid
             , CAST(CREDITCARDAPPROVALCODE AS VARCHAR) AS creditcardapprovalcode
