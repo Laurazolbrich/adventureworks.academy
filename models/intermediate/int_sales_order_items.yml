@@ -1,0 +1,43 @@
+version: 2
+
+models:
+  - name: int_sales_order_items
+    description: intermediate sales order items.
+    columns:
+      - name: PK_SALESORDERID
+        description: Identifier for Sales order
+        tests:
+          - not_null
+
+      - name: PK_SALESORDERDETAIL_ID
+        description: Identifier for sales reason detail 
+        tests:
+          - unique
+          - not_null
+
+      - name: CREDITCARDID
+        description: Credit card identifier
+
+      - name: SHIPTOADDRESSID
+        description: Address
+
+      - name: ORDERQTY
+        description: Quantity
+
+      - name: UNITPRICE
+        description: Unit price
+
+      - name: UNITPRICEDISCOUNT
+        description: Unit price discount
+
+      - name: PRODUCT_ID
+        description: Product identifier 
+
+      - name: TOTALDUE
+        description: Product identifier 
+
+      - name: ORDERDATE
+        description: Order date 
+      
+      - name: SALE_STATUS
+        description: sale status

@@ -1,0 +1,97 @@
+version: 2
+
+models:
+  - name: fct_sales
+    description: Tabela fato de vendas
+    columns:
+      - name: SK_SALE
+        description: Surrogate key of fact table 
+        tests:
+          - not_null
+          - unique
+              
+
+      - name: PK_SALESREASONID
+        description: Primary key Salesreason 
+ ##       tests:
+ ##        - not_null
+
+      - name: FK_CUSTOMERS
+        description: Foreign key customer
+##        tests:
+##          - unique
+##          - not_null        
+
+      - name: FK_LOCATION
+        description: Foreign key location
+        tests: 
+          - not_null
+
+      - name: FK_PRODUCT
+        description: Foreign key product
+        tests: 
+          - not_null
+    
+      - name: FK_SALES_REASON
+        description: Foreign key sales reason
+
+      - name: QUANTITY
+        description: Order quantity
+
+      - name: UNITPRICE
+        description: Unit price
+
+      - name: UNIT_DISCOUNT
+        description: Unit discount
+
+      - name: NM_PRODUCT
+        description: Product name
+
+      - name: CARDTYPE
+        description: Credit card type
+
+      - name: SALE_REASON
+        description: Sales reason   
+
+      - name: ORDERDATE
+        description: Order date.
+
+      - name: NAME
+        description: Client name
+
+      - name: MIDDLENAME
+        description: Clients middle name 
+
+      - name: LASTNAME
+        description: Clients last name              
+
+      - name: SALE_STATUS
+        description: Sale status
+
+      - name: COUNTRY
+        description: Contry name
+
+      - name: COUNTRY
+        description: Contry name
+
+      - name: STATE
+        description: state name
+
+      - name: CITY
+        description: city name
+
+      - name: FULL_DATE
+        description: Full date, day, month and year
+
+      - name: Day
+        description: Day
+
+      - name: FULLNAME
+        description: Customer's first and last name
+      
+      - name: UNIT_PRICE_WITH_DISCOUNT
+        description: Unit price after discount
+
+
+
+
