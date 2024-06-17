@@ -39,16 +39,15 @@ models:
   dbt_adventure_works:
     # Applies to all files under models/example/
     marts:
+    intermediate:
+      +schema: intermediate
+      +materialized: view
+    marts:
+      +schema: marts
       +materialized: table
-      intermediate:
-        +materialized: view 
-
+    staging:
+      +schema: staging
+      +materialized: view
     staging: 
       erp:
         +materialized: view 
-
-
-
-
-
-
