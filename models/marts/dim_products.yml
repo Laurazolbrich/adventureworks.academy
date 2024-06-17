@@ -4,7 +4,7 @@ models:
   - name: dim_products
     description: Products dimension
     columns:
-      - name: SK_PRODUTO
+      - name: SK_PRODUCT
         description: Surrogate key for products dimension  
         tests:
           - unique
